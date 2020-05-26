@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Your contribution
+{% endblock %}
+
+{% block content %}
+
+    <h4>How much you would like to invest to a common group project:</h4>
+
+    {% formfield player.contribution label='' %}
+
+    <br>
+    {% next_button %}
+
+{% endblock %}
